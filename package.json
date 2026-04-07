@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\" --no-notify",
     "start": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\" --no-notify",
-    "build:css": "postcss css/styles.css --use autoprefixer cssnano -o dist/css/styles.min.css",
-    "build:js": "terser js/main.js -o dist/js/main.min.js --compress --mangle",
-    "build": "echo 'No build required, deploying static files directly!'",
+    "build:css": "postcss css/styles.css --use autoprefixer cssnano -o public/css/styles.css",
+    "build:js": "terser js/main.js -o public/js/main.js --compress --mangle",
+    "build": "npm i readdirp@3.6.0 && shx rm -rf public && shx mkdir public && shx cp index.html public/ && shx cp -r assets public/ && shx mkdir -p public/css public/js && npm run build:css && npm run build:js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,6 +28,7 @@
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
     "readdirp": "^3.6.0",
+    "shx": "^0.4.0",
     "terser": "^5.39.0"
   }
 }
