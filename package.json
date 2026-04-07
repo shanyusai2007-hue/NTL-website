@@ -1,0 +1,26 @@
+{
+  "name": "ntl",
+  "version": "1.0.0",
+  "description": "Norman Tech Lab website — Design is an act of Artism",
+  "main": "index.html",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\" --no-notify",
+    "start": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\" --no-notify",
+    "build:css": "postcss css/styles.css --use autoprefixer cssnano -o dist/css/styles.min.css",
+    "build:js": "terser js/main.js -o dist/js/main.min.js --compress --mangle",
+    "build": "npm run build:css && npm run build:js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["norman", "tech", "lab", "design"],
+  "author": "Norman Tech Lab",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.3",
+    "cssnano": "^7.0.6",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "terser": "^5.39.0"
+  }
+}
