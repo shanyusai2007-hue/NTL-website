@@ -11,7 +11,12 @@
     "build": "npm run build:css && npm run build:js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["norman", "tech", "lab", "design"],
+  "keywords": [
+    "norman",
+    "tech",
+    "lab",
+    "design"
+  ],
   "author": "Norman Tech Lab",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +26,7 @@
     "html-minifier-terser": "^7.2.0",
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
+    "readdirp": "^5.0.0",
     "terser": "^5.39.0"
   }
 }
