@@ -3,5 +3,6 @@
   "trailingSlash": false,
   "github": {
     "silent": true
-  }
+  },
+  "outputDirectory": "."
 }
