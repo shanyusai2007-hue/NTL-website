@@ -1,8 +1,8 @@
-# NTL — Norman Tech Lab
+# NTL — Next Tech Lab
 
 *Design is an act of Artism.*
 
-This is the official codebase for the Norman Tech Lab (NTL) portfolio website. We built this from the ground up to be a completely cinematic, high-end digital experience. Forget standard templates—this site was made to feel like a premium interactive showpiece using raw CSS, vanilla JS, and a lot of caffeine.
+This is the official codebase for the Next Tech Lab (NTL) portfolio website. We built this from the ground up to be a completely cinematic, high-end digital experience. Forget standard templates—this site was made to feel like a premium interactive showpiece using raw CSS, vanilla JS, and a lot of caffeine.
 
 ## What's under the hood?
 We didn't just throw a bunch of bloated libraries together. The tech stack is intentionally lean to keep performance absolutely buttery:
