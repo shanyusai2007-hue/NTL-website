@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import CustomCursor from './components/CustomCursor'
 import ScrollProgress from './components/ScrollProgress'
 import Curtain from './components/Curtain'
@@ -34,6 +35,7 @@ function App() {
         <Finale />
       </div>
       <Footer />
+      <Analytics />
     </>
   )
 }
